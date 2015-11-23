@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, ZYScrollTabBarDataSource {
+class ViewController: UIViewController {
 
   var viewControllers: [TestViewController] = []
   var scrollTabBar: ZYScrollTabBar?
@@ -35,10 +35,12 @@ class ViewController: UIViewController, ZYScrollTabBarDataSource {
     viewControllers.append(testVC3)
 
     scrollTabBar!.dataSource = self
+    scrollTabBar!.delegate = self
     scrollTabBar?.reloadView()
 
   }
-
+}
+extension ViewController:ZYScrollTabBarDataSource, ZYScrollTabBarDelegate {
   func numberOfItems(tabBar: ZYScrollTabBar) -> Int {
     return viewControllers.count
   }
@@ -46,5 +48,10 @@ class ViewController: UIViewController, ZYScrollTabBarDataSource {
   func viewControllerForScrollTabBar(scrollTabBar: ZYScrollTabBar, atIndex: Int) -> UIViewController {
     return viewControllers[atIndex]
   }
+
+  func tabBarDidScrollAtIndex(tabBar: ZYScrollTabBar, index: Int) {
+    print("SCROLL TO \(index)th VIEWCONTROLLER!")
+  }
+
 }
 
