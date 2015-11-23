@@ -1,0 +1,422 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1BC1C66A1BFEFCCE0045B40D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC1C6691BFEFCCE0045B40D /* AppDelegate.swift */; };
+		1BC1C66C1BFEFCCE0045B40D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC1C66B1BFEFCCE0045B40D /* ViewController.swift */; };
+		1BC1C66F1BFEFCCE0045B40D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BC1C66D1BFEFCCE0045B40D /* Main.storyboard */; };
+		1BC1C6711BFEFCCE0045B40D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BC1C6701BFEFCCE0045B40D /* Assets.xcassets */; };
+		1BC1C6741BFEFCCE0045B40D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BC1C6721BFEFCCE0045B40D /* LaunchScreen.storyboard */; };
+		1BC1C67F1BFEFCCE0045B40D /* ZYScrollTabBarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC1C67E1BFEFCCE0045B40D /* ZYScrollTabBarUITests.swift */; };
+		1BC1C68B1BFEFF500045B40D /* ZYScrollTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC1C68A1BFEFF500045B40D /* ZYScrollTabBar.swift */; };
+		1BC1C68D1BFF35FD0045B40D /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC1C68C1BFF35FD0045B40D /* TestViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1BC1C67B1BFEFCCE0045B40D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1BC1C65E1BFEFCCE0045B40D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1BC1C6651BFEFCCE0045B40D;
+			remoteInfo = ZYScrollTabBar;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1BC1C6661BFEFCCE0045B40D /* ZYScrollTabBarDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZYScrollTabBarDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BC1C6691BFEFCCE0045B40D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1BC1C66B1BFEFCCE0045B40D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1BC1C66E1BFEFCCE0045B40D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1BC1C6701BFEFCCE0045B40D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1BC1C6731BFEFCCE0045B40D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1BC1C6751BFEFCCE0045B40D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1BC1C67A1BFEFCCE0045B40D /* ZYScrollTabBarDemo.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZYScrollTabBarDemo.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BC1C67E1BFEFCCE0045B40D /* ZYScrollTabBarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZYScrollTabBarUITests.swift; sourceTree = "<group>"; };
+		1BC1C6801BFEFCCE0045B40D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1BC1C68A1BFEFF500045B40D /* ZYScrollTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZYScrollTabBar.swift; sourceTree = "<group>"; };
+		1BC1C68C1BFF35FD0045B40D /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1BC1C6631BFEFCCE0045B40D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BC1C6771BFEFCCE0045B40D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1BC1C65D1BFEFCCE0045B40D = {
+			isa = PBXGroup;
+			children = (
+				1BC1C6681BFEFCCE0045B40D /* ZYScrollTabBarDemo */,
+				1BC1C67D1BFEFCCE0045B40D /* ZYScrollTabBarUITests */,
+				1BC1C6671BFEFCCE0045B40D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1BC1C6671BFEFCCE0045B40D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1BC1C6661BFEFCCE0045B40D /* ZYScrollTabBarDemo.app */,
+				1BC1C67A1BFEFCCE0045B40D /* ZYScrollTabBarDemo.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1BC1C6681BFEFCCE0045B40D /* ZYScrollTabBarDemo */ = {
+			isa = PBXGroup;
+			children = (
+				1BC1C6891BFEFF240045B40D /* ZYScrollTabBar */,
+				1BC1C68C1BFF35FD0045B40D /* TestViewController.swift */,
+				1BC1C6691BFEFCCE0045B40D /* AppDelegate.swift */,
+				1BC1C66B1BFEFCCE0045B40D /* ViewController.swift */,
+				1BC1C66D1BFEFCCE0045B40D /* Main.storyboard */,
+				1BC1C6701BFEFCCE0045B40D /* Assets.xcassets */,
+				1BC1C6721BFEFCCE0045B40D /* LaunchScreen.storyboard */,
+				1BC1C6751BFEFCCE0045B40D /* Info.plist */,
+			);
+			name = ZYScrollTabBarDemo;
+			path = ZYScrollTabBar;
+			sourceTree = "<group>";
+		};
+		1BC1C67D1BFEFCCE0045B40D /* ZYScrollTabBarUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1BC1C67E1BFEFCCE0045B40D /* ZYScrollTabBarUITests.swift */,
+				1BC1C6801BFEFCCE0045B40D /* Info.plist */,
+			);
+			path = ZYScrollTabBarUITests;
+			sourceTree = "<group>";
+		};
+		1BC1C6891BFEFF240045B40D /* ZYScrollTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				1BC1C68A1BFEFF500045B40D /* ZYScrollTabBar.swift */,
+			);
+			path = ZYScrollTabBar;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1BC1C6651BFEFCCE0045B40D /* ZYScrollTabBarDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1BC1C6831BFEFCCE0045B40D /* Build configuration list for PBXNativeTarget "ZYScrollTabBarDemo" */;
+			buildPhases = (
+				1BC1C6621BFEFCCE0045B40D /* Sources */,
+				1BC1C6631BFEFCCE0045B40D /* Frameworks */,
+				1BC1C6641BFEFCCE0045B40D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZYScrollTabBarDemo;
+			productName = ZYScrollTabBar;
+			productReference = 1BC1C6661BFEFCCE0045B40D /* ZYScrollTabBarDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1BC1C6791BFEFCCE0045B40D /* ZYScrollTabBarDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1BC1C6861BFEFCCE0045B40D /* Build configuration list for PBXNativeTarget "ZYScrollTabBarDemoUITests" */;
+			buildPhases = (
+				1BC1C6761BFEFCCE0045B40D /* Sources */,
+				1BC1C6771BFEFCCE0045B40D /* Frameworks */,
+				1BC1C6781BFEFCCE0045B40D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1BC1C67C1BFEFCCE0045B40D /* PBXTargetDependency */,
+			);
+			name = ZYScrollTabBarDemoUITests;
+			productName = ZYScrollTabBarUITests;
+			productReference = 1BC1C67A1BFEFCCE0045B40D /* ZYScrollTabBarDemo.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1BC1C65E1BFEFCCE0045B40D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = alfredcc;
+				TargetAttributes = {
+					1BC1C6651BFEFCCE0045B40D = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					1BC1C6791BFEFCCE0045B40D = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = 1BC1C6651BFEFCCE0045B40D;
+					};
+				};
+			};
+			buildConfigurationList = 1BC1C6611BFEFCCE0045B40D /* Build configuration list for PBXProject "ZYScrollTabBarDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1BC1C65D1BFEFCCE0045B40D;
+			productRefGroup = 1BC1C6671BFEFCCE0045B40D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1BC1C6651BFEFCCE0045B40D /* ZYScrollTabBarDemo */,
+				1BC1C6791BFEFCCE0045B40D /* ZYScrollTabBarDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1BC1C6641BFEFCCE0045B40D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BC1C6741BFEFCCE0045B40D /* LaunchScreen.storyboard in Resources */,
+				1BC1C6711BFEFCCE0045B40D /* Assets.xcassets in Resources */,
+				1BC1C66F1BFEFCCE0045B40D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BC1C6781BFEFCCE0045B40D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1BC1C6621BFEFCCE0045B40D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BC1C66C1BFEFCCE0045B40D /* ViewController.swift in Sources */,
+				1BC1C68B1BFEFF500045B40D /* ZYScrollTabBar.swift in Sources */,
+				1BC1C66A1BFEFCCE0045B40D /* AppDelegate.swift in Sources */,
+				1BC1C68D1BFF35FD0045B40D /* TestViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BC1C6761BFEFCCE0045B40D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BC1C67F1BFEFCCE0045B40D /* ZYScrollTabBarUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1BC1C67C1BFEFCCE0045B40D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1BC1C6651BFEFCCE0045B40D /* ZYScrollTabBarDemo */;
+			targetProxy = 1BC1C67B1BFEFCCE0045B40D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1BC1C66D1BFEFCCE0045B40D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1BC1C66E1BFEFCCE0045B40D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1BC1C6721BFEFCCE0045B40D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1BC1C6731BFEFCCE0045B40D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1BC1C6811BFEFCCE0045B40D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1BC1C6821BFEFCCE0045B40D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1BC1C6841BFEFCCE0045B40D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ZYScrollTabBar/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.alfredcc.ZYScrollTabBarDemo;
+				PRODUCT_NAME = ZYScrollTabBarDemo;
+			};
+			name = Debug;
+		};
+		1BC1C6851BFEFCCE0045B40D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ZYScrollTabBar/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.alfredcc.ZYScrollTabBarDemo;
+				PRODUCT_NAME = ZYScrollTabBarDemo;
+			};
+			name = Release;
+		};
+		1BC1C6871BFEFCCE0045B40D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ZYScrollTabBarUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.alfredcc.ZYScrollTabBarUITests;
+				PRODUCT_NAME = ZYScrollTabBarDemo;
+				TEST_TARGET_NAME = ZYScrollTabBar;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		1BC1C6881BFEFCCE0045B40D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ZYScrollTabBarUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.alfredcc.ZYScrollTabBarUITests;
+				PRODUCT_NAME = ZYScrollTabBarDemo;
+				TEST_TARGET_NAME = ZYScrollTabBar;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1BC1C6611BFEFCCE0045B40D /* Build configuration list for PBXProject "ZYScrollTabBarDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BC1C6811BFEFCCE0045B40D /* Debug */,
+				1BC1C6821BFEFCCE0045B40D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1BC1C6831BFEFCCE0045B40D /* Build configuration list for PBXNativeTarget "ZYScrollTabBarDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BC1C6841BFEFCCE0045B40D /* Debug */,
+				1BC1C6851BFEFCCE0045B40D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1BC1C6861BFEFCCE0045B40D /* Build configuration list for PBXNativeTarget "ZYScrollTabBarDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BC1C6871BFEFCCE0045B40D /* Debug */,
+				1BC1C6881BFEFCCE0045B40D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1BC1C65E1BFEFCCE0045B40D /* Project object */;
+}
