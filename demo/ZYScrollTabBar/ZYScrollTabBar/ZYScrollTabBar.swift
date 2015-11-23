@@ -197,6 +197,7 @@ extension ZYScrollTabBar: UIScrollViewDelegate{
   func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
     if scrollView === self.scrollView {
       isDragging = false
+      selectTabWithIndex(Int(scrollView.contentOffset.x / bounds.width), animated: true)
     }
   }
 
