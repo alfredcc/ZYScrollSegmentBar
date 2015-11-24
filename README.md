@@ -26,6 +26,7 @@ override func viewDidLoad() {
   // viewControllers.append(viewController1)
   // viewControllers.append(viewController2)
   // ...
+}
 ```
 Second: implement 'ZYScrollTabBarDataSource' and 'ZYScrollTabBarDelegate'
 ``` swift
