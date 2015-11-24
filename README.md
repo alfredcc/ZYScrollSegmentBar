@@ -11,7 +11,7 @@ First
 override func viewDidLoad() {
   super.viewDidLoad()
   let scrollTabBar = ZYScrollTabBar(frame: frame)
-  view.addSubview(scrollTabBar!)
+  view.addSubview(scrollTabBar)
 
   scrollTabBar.dataSource = self
   scrollTabBar.delegate = self
