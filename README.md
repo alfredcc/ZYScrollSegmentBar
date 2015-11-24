@@ -10,8 +10,9 @@
 # Usage
 Very easy to use, just like UITableViewController, you just need to implement the 'datasource' and 'delegate' (optional)
 
-First
+First:  create the ZYScrollTabBar()
 ``` swift
+var viewControllers:[UIViewController] = []
 override func viewDidLoad() {
   super.viewDidLoad()
   let scrollTabBar = ZYScrollTabBar(frame: frame)
@@ -20,8 +21,13 @@ override func viewDidLoad() {
   scrollTabBar.dataSource = self
   scrollTabBar.delegate = self
   scrollTabBar.reloadView()
+  
+  // add you viewControllers
+  // viewControllers.append(viewController1)
+  // viewControllers.append(viewController2)
+  // ...
 ```
-Second
+Second: implement 'ZYScrollTabBarDataSource' and 'ZYScrollTabBarDelegate'
 ``` swift
 extension ViewController:ZYScrollTabBarDataSource, ZYScrollTabBarDelegate {
   // return the number of items
@@ -37,6 +43,24 @@ extension ViewController:ZYScrollTabBarDataSource, ZYScrollTabBarDelegate {
     print("SCROLL TO \(index)th VIEWCONTROLLER!")
   }
 }
+```
+
+# Appearance
+``` swift
+struct ZYScrollTabBarAppearance {
+  var textColor: UIColor = UIColor.darkGrayColor()
+  var selectedTextColor: UIColor = UIColor.redColor()
+  var font: UIFont = UIFont.systemFontOfSize(15)
+  var selectedFont: UIFont = UIFont.systemFontOfSize(15)
+  var bottomLineColor: UIColor = UIColor.cyanColor()
+  var bottomLineHeight: CGFloat = 2.0
+  var tabBarHeight: CGFloat = 40.0
+  var tabMargin: CGFloat = 20.0
+}
+```
+
+``` swift
+  scrollTabBar.appearance.textColor = UIColor.darkGrayColor()
 ```
 # Requirements
 Swift 2.0, iOS 8.0
