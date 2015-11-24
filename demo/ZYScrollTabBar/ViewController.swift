@@ -11,17 +11,18 @@ import UIKit
 class ViewController: UIViewController {
 
   var viewControllers: [TestViewController] = []
-  var scrollTabBar: ZYScrollTabBar?
+//  var scrollTabBar: ZYScrollTabBar?
   override func viewDidLoad() {
     super.viewDidLoad()
     // Do any additional setup after loading the view, typically from a nib.
 
-    scrollTabBar = ZYScrollTabBar(frame: CGRect(x: 0, y: 20, width: view.frame.width, height: view.frame.height - 20))
-    view.addSubview(scrollTabBar!)
+    let scrollTabBar = ZYScrollTabBar(frame: CGRect(x: 0, y: 20, width: view.frame.width, height: view.frame.height - 20))
+    view.addSubview(scrollTabBar)
 
     let testVC1 = TestViewController()
     testVC1.title = "FIRST"
     testVC1.viewColor = UIColor.darkGrayColor()
+    testVC1.URLString = "https://github.com"
     viewControllers.append(testVC1)
 
     let testVC2 = TestViewController()
@@ -34,9 +35,9 @@ class ViewController: UIViewController {
     testVC3.viewColor = UIColor.brownColor()
     viewControllers.append(testVC3)
 
-    scrollTabBar!.dataSource = self
-    scrollTabBar!.delegate = self
-    scrollTabBar?.reloadView()
+    scrollTabBar.dataSource = self
+    scrollTabBar.delegate = self
+    scrollTabBar.reloadView()
 
   }
 }
