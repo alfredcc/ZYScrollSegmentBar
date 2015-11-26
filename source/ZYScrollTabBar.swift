@@ -12,6 +12,11 @@ import UIKit
 protocol ZYScrollTabBarDataSource: NSObjectProtocol {
   func numberOfItems(scrollTabBar: ZYScrollTabBar) -> Int
   func viewControllerForScrollTabBar(scrollTabBar: ZYScrollTabBar, atIndex: Int) -> UIViewController
+
+}
+
+@objc protocol ZYScrollTabBarDelegate: NSObjectProtocol {
+  optional func tabBarDidScrollAtIndex(tabBar: ZYScrollTabBar, index:Int)
 }
 
 // MARK: - Appearance
@@ -31,6 +36,7 @@ struct ZYScrollTabBarAppearance {
 class ZYScrollTabBar: UIView{
   // MARK: Properties
   weak var dataSource: ZYScrollTabBarDataSource?
+  weak var delegate: ZYScrollTabBarDelegate?
   var appearance: ZYScrollTabBarAppearance! {
     didSet {
       self.configureView()
@@ -145,7 +151,7 @@ class ZYScrollTabBar: UIView{
     }
   }
 
-  private func selectTabWithIndex(index: Int, animated: Bool) {
+  func selectTabWithIndex(index: Int, animated: Bool) {
     let currentButton = itemButtons[index]
     setSelectedItemButton(index)
     let moveSelectedLine: () -> Void =  {
@@ -158,6 +164,7 @@ class ZYScrollTabBar: UIView{
       moveSelectedLine()
     }
     scrollViewToIndex(index, animated: animated)
+    delegate?.tabBarDidScrollAtIndex?(self, index: index)
   }
 
   private func scrollViewToIndex(index: Int, animated: Bool) {
