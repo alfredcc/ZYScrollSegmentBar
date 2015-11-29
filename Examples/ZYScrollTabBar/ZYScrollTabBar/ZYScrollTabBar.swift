@@ -43,16 +43,15 @@ class ZYScrollTabBar: UIView{
     }
   }
 
-  private var tabView: UIView!
-  private var selectedLine: CALayer!
-  private var itemButtons: [UIButton] = []
-  private var scrollView: UIScrollView!
-  private var subViewControllers: [UIViewController] = []
+  private var tabView = UIView()
+  private let selectedLine = CALayer()
+  private var scrollView = UIScrollView()
+  private var itemButtons = [UIButton]()
+  private var subViewControllers = [UIViewController]()
   private var isDragging: Bool = false
   private var canLayoutSubviews: Bool = false
-
-  var selectedTabIndex: Int = 0 //当前选中页 默认为0
   private var itemButtonWidth: CGFloat!
+  var selectedTabIndex: Int = 0 //当前选中页 默认为0
 
   // MARK: Initialization
   override init(frame: CGRect) {
@@ -81,10 +80,10 @@ class ZYScrollTabBar: UIView{
     reset()
     canLayoutSubviews = false
     guard let dataSource = dataSource else { return }
-    tabView = UIView(frame: CGRect(x: 0, y: 0, width: frame.width, height: appearance.tabBarHeight))
+    tabView.frame = CGRect(x: 0, y: 0, width: frame.width, height: appearance.tabBarHeight)
     addSubview(tabView)
 
-    scrollView = UIScrollView(frame: CGRectMake(0, appearance.tabBarHeight, frame.width, frame.height - appearance.tabBarHeight))
+    scrollView.frame = CGRectMake(0, appearance.tabBarHeight, frame.width, frame.height - appearance.tabBarHeight)
     scrollView.delegate = self
     scrollView.pagingEnabled = true
     scrollView.userInteractionEnabled = true
@@ -118,7 +117,6 @@ class ZYScrollTabBar: UIView{
 
     // Add Selected Line
     // 添加选择横线
-    selectedLine = CALayer()
     selectedLine.frame = CGRect(x: appearance.tabMargin, y: appearance.tabBarHeight - 2, width: itemButtonWidth, height: 2)
     selectedLine.backgroundColor = UIColor.redColor().CGColor
     tabView.layer.addSublayer(selectedLine)
