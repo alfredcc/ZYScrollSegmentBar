@@ -4,13 +4,13 @@
 
 # Installation
 #### Manually
-1. Download 'ZYScrollSegmentBar.swift' file in the source directory.
-2. Add the source file to your Xcode project.
+1. Download the source directory.
+2. Drag the source directory to your Xcode project.
 
 # Usage
-Very easy to use, just like UITableViewController, you just need to implement the 'datasource' and 'delegate' (optional)
+Very easy to use, just like `UITableViewController`, you just need to implement the `datasource` and `delegate` (optional)
 
-First:  create the ZYScrollSegmentBar()
+First:  create the `ZYScrollSegmentBar()`
 ``` swift
 var viewControllers:[UIViewController] = []
 override func viewDidLoad() {
@@ -67,4 +67,4 @@ public struct ZYScrollSegmentBarAppearance {
 Swift 2.0, iOS 8.0
 
 # License
-ZYScrollTabBar is provided under the MIT license. See LICENSE file for details.
+`ZYScrollSegmentBar` is provided under the `MIT license`. See LICENSE file for details.
