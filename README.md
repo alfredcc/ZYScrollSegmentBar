@@ -1,4 +1,3 @@
-# ZYScrollSegmentBar
 # Preview
 ![](https://raw.githubusercontent.com/alfredcc/ZYScrollSegmentBar/master/gif/preview.gif)
 
