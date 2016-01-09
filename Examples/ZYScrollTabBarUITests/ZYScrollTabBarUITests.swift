@@ -1,6 +1,6 @@
 //
-//  ZYScrollTabBarUITests.swift
-//  ZYScrollTabBarUITests
+//  ZYScrollSegmentBarUITests.swift
+//  ZYScrollSegmentBarUITests
 //
 //  Created by race on 15/11/20.
 //  Copyright © 2015年 alfredcc. All rights reserved.
@@ -8,7 +8,7 @@
 
 import XCTest
 
-class ZYScrollTabBarUITests: XCTestCase {
+class ZYScrollSegmentBarUITests: XCTestCase {
         
     override func setUp() {
         super.setUp()

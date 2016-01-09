@@ -1,6 +1,6 @@
 //
-//  ZYScrollTabBar.swift
-//  ZYScrollTabBar
+//  ZYScrollSegmentBar.swift
+//  ZYScrollSegmentBar
 //
 //  Created by race on 15/11/20.
 //  Copyright © 2015年 alfredcc. All rights reserved.
@@ -9,18 +9,18 @@
 import UIKit
 
 // MARK: - Protocol
-protocol ZYScrollTabBarDataSource: NSObjectProtocol {
-  func numberOfItems(scrollTabBar: ZYScrollTabBar) -> Int
-  func viewControllerForScrollTabBar(scrollTabBar: ZYScrollTabBar, atIndex: Int) -> UIViewController
+protocol ZYScrollSegmentBarDataSource: NSObjectProtocol {
+  func numberOfItems(scrollTabBar: ZYScrollSegmentBar) -> Int
+  func viewControllerForScrollTabBar(scrollTabBar: ZYScrollSegmentBar, atIndex: Int) -> UIViewController
 
 }
 
-@objc protocol ZYScrollTabBarDelegate: NSObjectProtocol {
-  optional func tabBarDidScrollAtIndex(tabBar: ZYScrollTabBar, index:Int)
+@objc protocol ZYScrollSegmentBarDelegate: NSObjectProtocol {
+  optional func tabBarDidScrollAtIndex(tabBar: ZYScrollSegmentBar, index:Int)
 }
 
 // MARK: - Appearance
-struct ZYScrollTabBarAppearance {
+struct ZYScrollSegmentBarAppearance {
 
   var textColor: UIColor = UIColor.darkGrayColor()
   var selectedTextColor: UIColor = UIColor.redColor()
@@ -33,11 +33,11 @@ struct ZYScrollTabBarAppearance {
 }
 
 
-class ZYScrollTabBar: UIView{
+class ZYScrollSegmentBar: UIView{
   // MARK: Properties
-  weak var dataSource: ZYScrollTabBarDataSource?
-  weak var delegate: ZYScrollTabBarDelegate?
-  var appearance: ZYScrollTabBarAppearance! {
+  weak var dataSource: ZYScrollSegmentBarDataSource?
+  weak var delegate: ZYScrollSegmentBarDelegate?
+  var appearance: ZYScrollSegmentBarAppearance! {
     didSet {
       self.configureView()
     }
@@ -56,7 +56,7 @@ class ZYScrollTabBar: UIView{
   // MARK: Initialization
   override init(frame: CGRect) {
     super.init(frame: frame)
-    appearance = ZYScrollTabBarAppearance()
+    appearance = ZYScrollSegmentBarAppearance()
   }
 
   required init?(coder aDecoder: NSCoder) {
@@ -184,7 +184,7 @@ class ZYScrollTabBar: UIView{
 }
 
 // MARK: - UIScrollViewDelegate
-extension ZYScrollTabBar: UIScrollViewDelegate{
+extension ZYScrollSegmentBar: UIScrollViewDelegate{
   func scrollViewWillBeginDragging(scrollView: UIScrollView) {
     if scrollView === self.scrollView {
       isDragging = true

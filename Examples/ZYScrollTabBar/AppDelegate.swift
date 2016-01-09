@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  ZYScrollTabBar
+//  ZYScrollSegmentBar
 //
 //  Created by race on 15/11/20.
 //  Copyright © 2015年 alfredcc. All rights reserved.

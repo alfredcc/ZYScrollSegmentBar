@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  ZYScrollTabBar
+//  ZYScrollSegmentBar
 //
 //  Created by race on 15/11/20.
 //  Copyright © 2015年 alfredcc. All rights reserved.
@@ -11,12 +11,12 @@ import UIKit
 class ViewController: UIViewController {
 
   var viewControllers: [TestViewController] = []
-//  var scrollTabBar: ZYScrollTabBar?
+//  var scrollTabBar: ZYScrollSegmentBar?
   override func viewDidLoad() {
     super.viewDidLoad()
     // Do any additional setup after loading the view, typically from a nib.
 
-    let scrollTabBar = ZYScrollTabBar(frame: CGRect(x: 0, y: 20, width: view.frame.width, height: view.frame.height - 20))
+    let scrollTabBar = ZYScrollSegmentBar(frame: CGRect(x: 0, y: 20, width: view.frame.width, height: view.frame.height - 20))
     view.addSubview(scrollTabBar)
 
     let testVC1 = TestViewController()
@@ -41,16 +41,16 @@ class ViewController: UIViewController {
 
   }
 }
-extension ViewController:ZYScrollTabBarDataSource, ZYScrollTabBarDelegate {
-  func numberOfItems(tabBar: ZYScrollTabBar) -> Int {
+extension ViewController:ZYScrollSegmentBarDataSource, ZYScrollSegmentBarDelegate {
+  func numberOfItems(tabBar: ZYScrollSegmentBar) -> Int {
     return viewControllers.count
   }
 
-  func viewControllerForScrollTabBar(scrollTabBar: ZYScrollTabBar, atIndex: Int) -> UIViewController {
+  func viewControllerForScrollTabBar(scrollTabBar: ZYScrollSegmentBar, atIndex: Int) -> UIViewController {
     return viewControllers[atIndex]
   }
 
-  func tabBarDidScrollAtIndex(tabBar: ZYScrollTabBar, index: Int) {
+  func tabBarDidScrollAtIndex(tabBar: ZYScrollSegmentBar, index: Int) {
     print("SCROLL TO \(index)th VIEWCONTROLLER!")
   }
 
