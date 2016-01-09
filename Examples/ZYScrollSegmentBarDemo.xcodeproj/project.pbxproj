@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B21C1D41C40948C0093C2A2 /* ZYScrollSegmentBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B21C1D31C40948C0093C2A2 /* ZYScrollSegmentBar.swift */; };
 		1BC1C66A1BFEFCCE0045B40D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC1C6691BFEFCCE0045B40D /* AppDelegate.swift */; };
 		1BC1C66C1BFEFCCE0045B40D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC1C66B1BFEFCCE0045B40D /* ViewController.swift */; };
 		1BC1C66F1BFEFCCE0045B40D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BC1C66D1BFEFCCE0045B40D /* Main.storyboard */; };
 		1BC1C6711BFEFCCE0045B40D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BC1C6701BFEFCCE0045B40D /* Assets.xcassets */; };
 		1BC1C6741BFEFCCE0045B40D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BC1C6721BFEFCCE0045B40D /* LaunchScreen.storyboard */; };
 		1BC1C67F1BFEFCCE0045B40D /* ZYScrollTabBarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC1C67E1BFEFCCE0045B40D /* ZYScrollTabBarUITests.swift */; };
-		1BC1C68B1BFEFF500045B40D /* ZYScrollTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC1C68A1BFEFF500045B40D /* ZYScrollTabBar.swift */; };
 		1BC1C68D1BFF35FD0045B40D /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC1C68C1BFF35FD0045B40D /* TestViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -28,17 +28,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1BC1C6661BFEFCCE0045B40D /* ZYScrollTabBarDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZYScrollTabBarDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B21C1D31C40948C0093C2A2 /* ZYScrollSegmentBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZYScrollSegmentBar.swift; sourceTree = "<group>"; };
+		1BC1C6661BFEFCCE0045B40D /* ZYScrollSegmentBarDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZYScrollSegmentBarDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BC1C6691BFEFCCE0045B40D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1BC1C66B1BFEFCCE0045B40D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1BC1C66E1BFEFCCE0045B40D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1BC1C6701BFEFCCE0045B40D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1BC1C6731BFEFCCE0045B40D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1BC1C6751BFEFCCE0045B40D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1BC1C67A1BFEFCCE0045B40D /* ZYScrollTabBarDemo.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZYScrollTabBarDemo.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BC1C67A1BFEFCCE0045B40D /* ZYScrollSegmentBarDemo.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZYScrollSegmentBarDemo.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BC1C67E1BFEFCCE0045B40D /* ZYScrollTabBarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZYScrollTabBarUITests.swift; sourceTree = "<group>"; };
 		1BC1C6801BFEFCCE0045B40D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1BC1C68A1BFEFF500045B40D /* ZYScrollTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZYScrollTabBar.swift; sourceTree = "<group>"; };
 		1BC1C68C1BFF35FD0045B40D /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -60,10 +60,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B21C1D21C40948C0093C2A2 /* source */ = {
+			isa = PBXGroup;
+			children = (
+				1B21C1D31C40948C0093C2A2 /* ZYScrollSegmentBar.swift */,
+			);
+			name = source;
+			path = ../../source;
+			sourceTree = "<group>";
+		};
 		1BC1C65D1BFEFCCE0045B40D = {
 			isa = PBXGroup;
 			children = (
-				1BC1C6681BFEFCCE0045B40D /* ZYScrollTabBarDemo */,
+				1BC1C6681BFEFCCE0045B40D /* ZYScrollSegmentBarDemo */,
 				1BC1C67D1BFEFCCE0045B40D /* ZYScrollTabBarUITests */,
 				1BC1C6671BFEFCCE0045B40D /* Products */,
 			);
@@ -72,16 +81,16 @@
 		1BC1C6671BFEFCCE0045B40D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1BC1C6661BFEFCCE0045B40D /* ZYScrollTabBarDemo.app */,
-				1BC1C67A1BFEFCCE0045B40D /* ZYScrollTabBarDemo.xctest */,
+				1BC1C6661BFEFCCE0045B40D /* ZYScrollSegmentBarDemo.app */,
+				1BC1C67A1BFEFCCE0045B40D /* ZYScrollSegmentBarDemo.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1BC1C6681BFEFCCE0045B40D /* ZYScrollTabBarDemo */ = {
+		1BC1C6681BFEFCCE0045B40D /* ZYScrollSegmentBarDemo */ = {
 			isa = PBXGroup;
 			children = (
-				1BC1C6891BFEFF240045B40D /* ZYScrollTabBar */,
+				1B21C1D21C40948C0093C2A2 /* source */,
 				1BC1C68C1BFF35FD0045B40D /* TestViewController.swift */,
 				1BC1C6691BFEFCCE0045B40D /* AppDelegate.swift */,
 				1BC1C66B1BFEFCCE0045B40D /* ViewController.swift */,
@@ -90,7 +99,7 @@
 				1BC1C6721BFEFCCE0045B40D /* LaunchScreen.storyboard */,
 				1BC1C6751BFEFCCE0045B40D /* Info.plist */,
 			);
-			name = ZYScrollTabBarDemo;
+			name = ZYScrollSegmentBarDemo;
 			path = ZYScrollTabBar;
 			sourceTree = "<group>";
 		};
@@ -103,20 +112,12 @@
 			path = ZYScrollTabBarUITests;
 			sourceTree = "<group>";
 		};
-		1BC1C6891BFEFF240045B40D /* ZYScrollTabBar */ = {
-			isa = PBXGroup;
-			children = (
-				1BC1C68A1BFEFF500045B40D /* ZYScrollTabBar.swift */,
-			);
-			path = ZYScrollTabBar;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1BC1C6651BFEFCCE0045B40D /* ZYScrollTabBarDemo */ = {
+		1BC1C6651BFEFCCE0045B40D /* ZYScrollSegmentBarDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1BC1C6831BFEFCCE0045B40D /* Build configuration list for PBXNativeTarget "ZYScrollTabBarDemo" */;
+			buildConfigurationList = 1BC1C6831BFEFCCE0045B40D /* Build configuration list for PBXNativeTarget "ZYScrollSegmentBarDemo" */;
 			buildPhases = (
 				1BC1C6621BFEFCCE0045B40D /* Sources */,
 				1BC1C6631BFEFCCE0045B40D /* Frameworks */,
@@ -126,14 +127,14 @@
 			);
 			dependencies = (
 			);
-			name = ZYScrollTabBarDemo;
+			name = ZYScrollSegmentBarDemo;
 			productName = ZYScrollTabBar;
-			productReference = 1BC1C6661BFEFCCE0045B40D /* ZYScrollTabBarDemo.app */;
+			productReference = 1BC1C6661BFEFCCE0045B40D /* ZYScrollSegmentBarDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		1BC1C6791BFEFCCE0045B40D /* ZYScrollTabBarDemoUITests */ = {
+		1BC1C6791BFEFCCE0045B40D /* ZYScrollSegmentBarDemoUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1BC1C6861BFEFCCE0045B40D /* Build configuration list for PBXNativeTarget "ZYScrollTabBarDemoUITests" */;
+			buildConfigurationList = 1BC1C6861BFEFCCE0045B40D /* Build configuration list for PBXNativeTarget "ZYScrollSegmentBarDemoUITests" */;
 			buildPhases = (
 				1BC1C6761BFEFCCE0045B40D /* Sources */,
 				1BC1C6771BFEFCCE0045B40D /* Frameworks */,
@@ -144,9 +145,9 @@
 			dependencies = (
 				1BC1C67C1BFEFCCE0045B40D /* PBXTargetDependency */,
 			);
-			name = ZYScrollTabBarDemoUITests;
+			name = ZYScrollSegmentBarDemoUITests;
 			productName = ZYScrollTabBarUITests;
-			productReference = 1BC1C67A1BFEFCCE0045B40D /* ZYScrollTabBarDemo.xctest */;
+			productReference = 1BC1C67A1BFEFCCE0045B40D /* ZYScrollSegmentBarDemo.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -168,7 +169,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 1BC1C6611BFEFCCE0045B40D /* Build configuration list for PBXProject "ZYScrollTabBarDemo" */;
+			buildConfigurationList = 1BC1C6611BFEFCCE0045B40D /* Build configuration list for PBXProject "ZYScrollSegmentBarDemo" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -181,8 +182,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1BC1C6651BFEFCCE0045B40D /* ZYScrollTabBarDemo */,
-				1BC1C6791BFEFCCE0045B40D /* ZYScrollTabBarDemoUITests */,
+				1BC1C6651BFEFCCE0045B40D /* ZYScrollSegmentBarDemo */,
+				1BC1C6791BFEFCCE0045B40D /* ZYScrollSegmentBarDemoUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -213,7 +214,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1BC1C66C1BFEFCCE0045B40D /* ViewController.swift in Sources */,
-				1BC1C68B1BFEFF500045B40D /* ZYScrollTabBar.swift in Sources */,
+				1B21C1D41C40948C0093C2A2 /* ZYScrollSegmentBar.swift in Sources */,
 				1BC1C66A1BFEFCCE0045B40D /* AppDelegate.swift in Sources */,
 				1BC1C68D1BFF35FD0045B40D /* TestViewController.swift in Sources */,
 			);
@@ -232,7 +233,7 @@
 /* Begin PBXTargetDependency section */
 		1BC1C67C1BFEFCCE0045B40D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 1BC1C6651BFEFCCE0045B40D /* ZYScrollTabBarDemo */;
+			target = 1BC1C6651BFEFCCE0045B40D /* ZYScrollSegmentBarDemo */;
 			targetProxy = 1BC1C67B1BFEFCCE0045B40D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -345,8 +346,8 @@
 				INFOPLIST_FILE = ZYScrollTabBar/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.alfredcc.ZYScrollTabBarDemo;
-				PRODUCT_NAME = ZYScrollTabBarDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alfredcc.ZYScrollSegmentBarDemo;
+				PRODUCT_NAME = ZYScrollSegmentBarDemo;
 			};
 			name = Debug;
 		};
@@ -357,8 +358,8 @@
 				INFOPLIST_FILE = ZYScrollTabBar/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.alfredcc.ZYScrollTabBarDemo;
-				PRODUCT_NAME = ZYScrollTabBarDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alfredcc.ZYScrollSegmentBarDemo;
+				PRODUCT_NAME = ZYScrollSegmentBarDemo;
 			};
 			name = Release;
 		};
@@ -368,7 +369,7 @@
 				INFOPLIST_FILE = ZYScrollTabBarUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.alfredcc.ZYScrollTabBarUITests;
-				PRODUCT_NAME = ZYScrollTabBarDemo;
+				PRODUCT_NAME = ZYScrollSegmentBarDemo;
 				TEST_TARGET_NAME = ZYScrollTabBar;
 				USES_XCTRUNNER = YES;
 			};
@@ -380,7 +381,7 @@
 				INFOPLIST_FILE = ZYScrollTabBarUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.alfredcc.ZYScrollTabBarUITests;
-				PRODUCT_NAME = ZYScrollTabBarDemo;
+				PRODUCT_NAME = ZYScrollSegmentBarDemo;
 				TEST_TARGET_NAME = ZYScrollTabBar;
 				USES_XCTRUNNER = YES;
 			};
@@ -389,7 +390,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1BC1C6611BFEFCCE0045B40D /* Build configuration list for PBXProject "ZYScrollTabBarDemo" */ = {
+		1BC1C6611BFEFCCE0045B40D /* Build configuration list for PBXProject "ZYScrollSegmentBarDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1BC1C6811BFEFCCE0045B40D /* Debug */,
@@ -398,7 +399,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1BC1C6831BFEFCCE0045B40D /* Build configuration list for PBXNativeTarget "ZYScrollTabBarDemo" */ = {
+		1BC1C6831BFEFCCE0045B40D /* Build configuration list for PBXNativeTarget "ZYScrollSegmentBarDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1BC1C6841BFEFCCE0045B40D /* Debug */,
@@ -407,7 +408,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1BC1C6861BFEFCCE0045B40D /* Build configuration list for PBXNativeTarget "ZYScrollTabBarDemoUITests" */ = {
+		1BC1C6861BFEFCCE0045B40D /* Build configuration list for PBXNativeTarget "ZYScrollSegmentBarDemoUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1BC1C6871BFEFCCE0045B40D /* Debug */,
