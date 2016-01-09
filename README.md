@@ -27,7 +27,7 @@ override func viewDidLoad() {
   scrollSegmentBar.reloadView()
 }
 ```
-Second: implement 'ZYScrollSegmentBarDataSource' and 'ZYScrollSegmentBarDelegate'
+Second: implement `ZYScrollSegmentBarDataSource` and `ZYScrollSegmentBarDelegate`
 ``` swift
 extension ViewController:ZYScrollTabBarDataSource, ZYScrollTabBarDelegate {
   // return the number of items
